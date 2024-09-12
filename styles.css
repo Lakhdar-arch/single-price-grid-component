@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --Cyan:hsl(179, 62%, 43%);
+    --brightYellow:hsl(71, 73%, 54%);
+    --lightGray:hsl(204, 43%, 93%);
+    --grayishBlue:hsl(218, 22%, 67%);
+}
+html,body{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:center; 
+    align-items:center;
+    background-color:var(--lightGray);
+    font-family:"Karla",sans-serif;
+    font-size:16px;
+    line-height:2.5rem;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+h1,p{
+    padding-bottom:8%;
+}
+.container{
+    height:60%; 
+    width:45%;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow: 5px 5px 10px grey;
+}
+.upperContain{
+    height:50%;
+    width:100%;
+    background-color:white;
+    padding:2% 5%;
+}
+.upperContain h1{
+    color:#3da4a1;
+    padding:2% 0;
+}
+.upperContain h2{
+    color:var(--brightYellow);
+    font-size:22px;
+    padding:2% 0;
+}
+.upperContain p{
+    color:var(--grayishBlue);
+    padding:2% 0;
+}
+.lowerContain{
+    display:flex;
+    flex-direction:row;
+    height:50%;
+    color:white;
+}
+.lowerContain h1{
+    font-size:22px;
+    font-weight:600;
+}
+.right{
+    width:50%;
+    background-color:#2bb3b1;
+    padding:2% 5%;
+}
+.left{
+    width:50%;
+    background-color:#4abebd;
+    padding:2% 5%;
+}
+button{
+    width:80%;
+    height:50px;
+    font-size:20px;
+    font-weight:500;
+    background-color:var(--brightYellow);
+    color: white;
+    border:solid 2px var(--brightYellow);
+    border-radius:12px;
+    margin-left:8%;
+    cursor:pointer;
+    box-shadow:8px 8px 5px #26a2a0;
+}
+button:hover{
+    background-color:var(--grayishBlue);
+    border:solid 2px var(--grayishBlue);
+}
+#price{
+    font-size:30px;
+    font-weight:800;
+}
+#month{
+    color:var(--lightGray);
+}
+.attribution { font-size: 11px; text-align: center;padding-top:10px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+/* for width less than 900px */
+@media(max-width:950px){
+.container{
+    height:100vh; 
+    width:75%;
+    margin-top:8%;
+}
+
+}
+/* for with less than 600px */
+@media(max-width:600px){
+html,body{
+    height:auto;
+    width:100vw;
+}
+.container{
+    height:auto; 
+    width:85%;
+    margin-top:8%;
+}
+.lowerContain{
+    flex-direction:column;
+    height:auto;
+}
+.right{
+    width:100%;
+}
+.left{
+    width:100%;
+}
